@@ -1,0 +1,36 @@
+GET http://localhost:3000
+###Authorization: 7d8HMUuVX0WIMlb5PbCy9PkypgNu4SRg
+
+###
+GET http://localhost:3000/coffees
+Authorization: 7d8HMUuVX0WIMlb5PbCy9PkypgNu4SRg
+###
+GET http://localhost:3000/coffees?offset=1
+
+
+&offset=10
+
+###
+GET http://localhost:3000/coffees/4
+
+###
+POST http://localhost:3000/coffees
+Content-Type: application/json
+
+{
+  "name": "Coffee #5",
+  "brand": "Nest",
+  "flavors": ["vanilla", "chocolate"]
+}
+
+###
+PATCH http://localhost:3000/coffees/6
+Content-Type: application/json
+
+{
+  "name": "Coffee #6 Updated"
+}
+
+###
+DELETE http://localhost:3000/coffees/2
+
