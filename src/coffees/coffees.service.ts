@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { PaginationQueryDto } from './../common/dto/pagination-query.dto';
+import { PaginationQueryDto } from '../common/dto/pagination-query.dto';
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   HttpException,
